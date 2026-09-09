@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İki Âşık</title>
+    <!-- Şık fontlar -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,300;0,500;1,300;1,700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* Arka plan resmini tam ekran kaplama */
+            background-image: url('arkaplan.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif;
+            padding: 20px;
+        }
+
+        /* Yarı saydam cam efektli kart */
+        .card {
+            background: rgba(255, 255, 255, 0.22);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 24px;
+            padding: 45px 35px;
+            max-width: 620px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+            color: #2c1810;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Başlık Stili */
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.8rem;
+            color: #4a1525;
+            margin-bottom: 25px;
+            text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.9);
+            letter-spacing: 2px;
+        }
+
+        /* Kıta Stilleri */
+        .stanza {
+            margin-bottom: 22px;
+            line-height: 1.8;
+            font-size: 1.15rem;
+            font-weight: 500;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.85);
+        }
+
+        .stanza:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Vurgulanan Harfler */
+        .highlight {
+            font-weight: 700;
+            color: #6b1122;
+            letter-spacing: 1px;
+        }
+
+        /* Yumuşak Açılış Animasyonu */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.8rem;
+            }
+            .stanza {
+                font-size: 1rem;
+            }
+            .card {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>İki Âşık</h1>
+        
+        <div class="stanza">
+            Rabbim nasip etti birimizi öbürüne<br>
+            Koruyalım bu sevdayı onun hatırına<br>
+            Ne kadar arzular varsa yüreğimizde<br>
+            Kısa zamanda inşallah yetsin yerine
+        </div>
+
+        <div class="stanza">
+            Seviyorum senin sevgi dolu sözlerini<br>
+            Bana aşkla bakan ahu güzel gözlerini<br>
+            Sen konuşsan ben saatlerce susarım<br>
+            Gösterirsin bana, o en derin hislerini
+        </div>
+
+        <div class="stanza">
+            Biz iki <span class="highlight">ÂŞIK</span> biz ki birbirimize <span class="highlight">DİVANE</span><br>
+            Sen mum isen ben olurum <span class="highlight">PERVANE</span><br>
+            Bizim sevdamızdır o en güzel <span class="highlight">MASAL</span><br>
+            Aşkımızdır çok özel en büyük <span class="highlight">EFSANE</span>
+        </div>
+    </div>
+
+</body>
+</html>
